@@ -1,0 +1,250 @@
+\documentclass[letterpaper,9pt]{article}
+\usepackage[empty]{fullpage}
+\usepackage[usenames,dvipsnames,svgnames,table,x11names,HTML]{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{geometry}
+
+% Page geometry
+\geometry{
+    top=0.2in,
+    left=0.5in,
+    right=0.5in,
+    bottom=0.1in
+}
+
+% Color scheme
+\definecolor{primaryblue}{RGB}{0, 102, 204}
+\definecolor{darkgray}{RGB}{64, 64, 64}
+\definecolor{lightgray}{RGB}{128, 128, 128}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting with modern styling
+\titleformat{\section}{
+  \vspace{-6pt}\color{primaryblue}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{primaryblue}\titlerule \vspace{-4pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{#1\vspace{-2pt}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\color{darkgray}#1} & \textbf{\small\color{lightgray}#2} \\
+      \textit{\small #3} & \textit{\small\color{lightgray}#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{\color{darkgray}#1} & \textbf{\small\color{lightgray}#2}\\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, label=\textcolor{primaryblue}{\textbullet}, itemsep=0pt, parsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
+
+% Skill item command
+\newcommand{\skillItem}[2]{
+    \textbf{\color{darkgray}#1:} \small{#2}
+}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\LARGE\color{primaryblue}\scshape Mohammed Azeemuddin} \\ \vspace{1pt}
+    {\large\color{darkgray}\scshape Frontend Developer} \\ \vspace{3pt}
+
+    \footnotesize\color{lightgray}
+    \faMapMarker\ Neral, Maharashtra \quad
+    \faPhone\ \href{tel:+8291443947}{+91-8291443947} \quad
+    \faEnvelope\ \href{mailto:sfsuper2020@gmail.com}{sfsuper2020@gmail.com} \quad
+    \faGlobe\ \href{https://mohdazimuddinport.netlify.app}{Portfolio} \quad
+    \faLinkedin\ \href{https://linkedin.com/in/mohd-azimuddin-shaikh-34284b202}{LinkedIn} \quad
+    \faGithub\ \href{https://github.com/MohdAzimuddin}{GitHub}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Professional Summary}
+\small{Dedicated Frontend Developer with expertise in React.js, JavaScript, and modern web technologies. Strong focus on performance, scalability, and user experience. Passionate about delivering high-quality, accessible web applications.}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\vspace{-12pt}
+\begin{multicols}{2}
+\small
+\skillItem{Frontend}{React.js (v19), JavaScript (ES6+), TypeScript, HTML5, CSS3, Tailwind CSS, Framer} \\[3pt]
+\skillItem{UI/UX \& Performance}{Responsive design, accessibility, SEO optimization, Lighthouse audits} \\[3pt]
+\skillItem{React Ecosystem}{Styled Components, Framer Motion, React Router DOM} \\[3pt]
+\skillItem{Tools \& Version Control}{Git, GitHub, VS Code, React Developer Tools, Netlify, Replit, Vercel} \\[3pt]
+\skillItem{Performance}{Code debugging, performance tuning, best practices implementation} \\[3pt]
+\skillItem{API Integration}{RESTful APIs, Third-party integrations}
+\end{multicols}
+\vspace{-12pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {Somaiya Vidyavihar University, Mumbai}{2020 -- 2023}
+      {Bachelor of Computer Applications (BCA) - CGPA: 7.61}{Mumbai, Maharashtra}
+\resumeSubHeadingListEnd
+
+% %-----------EXPERIENCE-----------
+% \section{Work Experience}
+% \resumeSubHeadingListStart
+%     \resumeSubheading
+%         {Associate Frontend Developer}{Sep 2025 -- Present}
+%         {Customer Capital Pvt Ltd}{}
+%     \resumeItemListStart
+%         \resumeItem{Working on the frontend development of loyalty-driven services, focusing on scalable and maintainable UI architecture}
+%         \resumeItem{Collaborating closely with cross-functional teams to develope, implement, and enhance user-facing features}
+%         \resumeItem{Debugging and resolving frontend issues to ensure smooth and responsive user experiences}
+%         \resumeItem{Enhancing existing features for better performance and usability based on Quality Analytics}
+%         % \resumeItem{Contributing to the development of new features from concept to deployment, following modern development best practices}
+%     \resumeItemListEnd
+
+% \resumeSubHeadingListStart
+%     \resumeSubheading
+%         {Frontend Developer Intern}{Apr 2025 -- Aug 2025}
+%         {Bharat Biz Tech}{}
+%     \resumeItemListStart
+%         \resumeItem{Collaborate and Developed the official Bharat Biz Tech website, enhancing the company's digital presence}
+%         \resumeItem{Collaborate and Built a comprehensive School Management System software from scratch with an interactive dashboard and other functionality}
+%         \resumeItem{Implemented responsive design principles ensuring cross-device compatibility and optimal user experience}
+%     \resumeItemListEnd
+
+%     \resumeSubheading
+%         {Freelance Frontend Developer}{Aug 2024 -- Mar 2025}
+%         {Self-Employed}{}
+%     \resumeItemListStart
+%         \resumeItem{Developed optimized web solutions for 5+ clients, boosting site performance by 30\%}
+%         % \resumeItem{Designed and implemented reusable React.js components, improving development efficiency}
+%         \resumeItem{Collaborated closely with clients to define project goals and deliver tailored solutions}
+%         \resumeItem{Created pixel-perfect, mobile-friendly UIs ensuring a seamless user experience}
+%     \resumeItemListEnd
+% \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+\resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Associate Frontend Developer (Full TIme)}{Sep 2025 -- Present}
+        {Customer Capital Pvt Ltd}{}
+    \resumeItemListStart
+        \resumeItem{Developing scalable and maintainable UI architectures for loyalty-driven services}
+        \resumeItem{Collaborating with cross-functional teams to design, implement, and enhance user-facing features}
+        \resumeItem{Debugging and resolving frontend issues to ensure smooth and responsive user experiences}
+        \resumeItem{Enhancing existing features for better performance and usability based on quality analytics}
+        % \resumeItem{Contributing to the development of new features from concept to deployment, following modern development best practices}
+    \resumeItemListEnd
+
+    \resumeSubheading
+        {Frontend Developer Intern}{Apr 2025 -- Aug 2025}
+        {Bharat Biz Tech}{}
+    \resumeItemListStart
+        \resumeItem{Collaborated on and developed the official Bharat Biz Tech website, enhancing the company's digital presence}
+        \resumeItem{Built a comprehensive School Management System from scratch with an interactive dashboard and other key features}
+        \resumeItem{Implemented responsive design principles, ensuring cross-device compatibility and optimal user experience}
+    \resumeItemListEnd
+
+    \resumeSubheading
+        {Freelance Frontend Developer}{Aug 2024 -- Mar 2025}
+        {Self-Employed}{}
+    \resumeItemListStart
+        \resumeItem{Developed optimized web solutions for 5+ clients, improving site performance by up to 30\%}
+        % \resumeItem{Designed and implemented reusable React.js components, improving development efficiency}
+        \resumeItem{Collaborated with clients to define project goals and deliver customized solutions}
+        \resumeItem{Created pixel-perfect, mobile-friendly UIs to ensure seamless user experiences}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+
+%-----------SELECTED PROJECTS-----------
+\section{Selected Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+    {Supabase Authentication System – React.js, Supabase, Tailwind CSS, React Context API}{July 2025}
+    \resumeItemListStart
+        \resumeItem{Built a modular, fully responsive authentication system supporting email/password login and social sign-in with Google and GitHub (OAuth)}
+        \resumeItem{Implemented protected routes, real-time session management, and a dynamic dashboard displaying user and session data with live search filtering}
+    \resumeItemListEnd
+    \small{\textcolor{primaryblue}{\href{https://react-supabse-authentication.vercel.app}{\underline{Live Demo}}} ~ | ~
+    \textcolor{primaryblue}{\href{https://github.com/MohdAzimuddin/React_Supabse_Authentication}{\underline{Source Code}}}}
+\vspace{-9.1pt}
+
+\resumeProjectHeading
+        {E-commerce Web Application - React.js, CSS, React Router, Framer Motion}{Dec 2024 -- Jan 2025}
+        \resumeItemListStart
+            \resumeItem{Developed a fully responsive e-commerce platform with an intuitive UI and smooth navigation}
+            \resumeItem{Implemented cart functionality with optimized calculations and seamless checkout}
+        \resumeItemListEnd
+        \small{\textcolor{primaryblue}{\href{https://azimuddin-clothskart.netlify.app/}{\underline{Live Demo}}} ~ | ~
+        \textcolor{primaryblue}{\href{https://github.com/MohdAzimuddin/ClothsKart}{\underline{Source Code}}}}
+    \vspace{-9.1pt}
+
+    \resumeProjectHeading
+        {Live News Web Application - React.js, CSS, Framer Motion}{Oct 2024 -- Nov 2024}
+        \resumeItemListStart
+            \resumeItem{Built a real-time news aggregator integrating News API for live content updates}
+            \resumeItem{Enhanced user experience with smooth scrolling and an "Up-Button" for easy navigation}
+        \resumeItemListEnd
+        \small{\textcolor{primaryblue}{\href{https://atozlive-news.netlify.app/}{\underline{Live Demo}}} ~ | ~
+        \textcolor{primaryblue}{\href{https://github.com/MohdAzimuddin/livenews}{\underline{Source Code}}}}
+    \vspace{-9.1pt}
+
+    \resumeProjectHeading
+        {Simple Task Management Web Application - React.js, Tailwind CSS}{Feb 2025}
+        \resumeItemListStart
+            \resumeItem{Built a responsive task management app featuring dark mode, local storage, and seamless task tracking}
+        \resumeItemListEnd
+        \small{\textcolor{primaryblue}{\href{https://checklist-mohdazimuddin-chi.vercel.app}{\underline{Live Demo}}} ~ | ~
+        \textcolor{primaryblue}{\href{https://github.com/MohdAzimuddin/Checklist}{\underline{Source Code}}}}
+    \vspace{-9.1pt}
+
+    % \resumeProjectHeading
+    %     {Code Editor - HTML, CSS, JavaScript}{Aug 2024}
+    %     \resumeItemListStart
+    %         \resumeItem{Designed a lightweight online code editor with a real-time preview feature}
+    %         \resumeItem{Integrated a reset function for instant code clearing, enhancing usability}
+    %     \resumeItemListEnd
+    %     \small{\textcolor{primaryblue}{\href{https://1codeeditor.netlify.app/}{\underline{Live Demo}}} ~ | ~
+    %     \textcolor{primaryblue}{\href{https://github.com/MohdAzimuddin/codeeditor}{\underline{Source Code}}}}
+\resumeSubHeadingListEnd
+
+%-----------STRENGTHS-----------
+\section{Strengths}
+\vspace{-12pt}
+\begin{multicols}{2}
+\begin{itemize}[leftmargin=0.15in, label=\textcolor{primaryblue}{\textbullet}, itemsep=4pt]
+  \item \textbf{SEO-optimized, high-performance web applications}
+  \item \textbf{Expertise in responsive design}
+  \item \textbf{Fast learner with critical thinking skills}
+  \item \textbf{Highly collaborative and team-oriented}
+\end{itemize}
+\end{multicols}
+
+
+\end{document}
